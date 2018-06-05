@@ -16,6 +16,7 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProdutosComponent } from './admin/admin-produtos/admin-produtos.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
+import { ProdutoFormComponent } from './admin/produto-form/produto-form.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { LoginComponent } from './login/login.component';
     MyOrdersComponent,
     AdminProdutosComponent,
     AdminOrdersComponent,
-    LoginComponent
+    LoginComponent,
+    ProdutoFormComponent
   ],
   imports: [
     BrowserModule,
@@ -39,11 +41,13 @@ import { LoginComponent } from './login/login.component';
       { path: '', component: HomeComponent },
       { path: 'produtos', component: ProdutosComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },
+      { path: 'meus/pedidos', component: MyOrdersComponent },
       { path: 'check-out', component: CheckOutComponent },
       { path: 'order-success', component: OrderSuccessComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'admin/produtos', component: AdminProdutosComponent },
-      { path: 'admin/orders', component: AdminOrdersComponent }
+      { path: 'admin/produtos', component: AdminProdutosComponent }, 
+      { path: 'admin/produtos/novo', component: ProdutoFormComponent }, 
+      { path: 'admin/pedidos', component: AdminOrdersComponent }
     ])
   ],
   providers: [],

@@ -6,18 +6,15 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/shopping-cart">Carrinho de compras</a>
       </li>
 
       <li ngbDropdown class="nav-item dropdown show">
-        <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UserName</a>
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
         <div ngbDropdownMenu class="dropdown-menu show" aria-labelledby="dropdown01">
-          <a class="dropdown-item" routerLink="/my/orders">Meus Pedidos</a>
-          <a class="dropdown-item" routerLink="/admin/orders">Gestao de Pedidos</a>
+          <a class="dropdown-item" routerLink="/meus/pedidos">Meus Pedidos</a>
+          <a class="dropdown-item" routerLink="/admin/pedidos">Gestao de Pedidos</a>
           <a class="dropdown-item" routerLink="/admin/produtos">Gestao de produtos</a>
           <a class="dropdown-item">Sair</a>
         </div>
